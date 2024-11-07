@@ -1,0 +1,124 @@
+/* Reset Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+/* Navigation Menu Styles */
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: linear-gradient(90deg, #ff7e5f, #feb47b);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    transition: background 0.5s ease;
+}
+
+#navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 1rem 0;
+}
+
+#navbar li {
+    margin: 0 20px;
+}
+
+#navbar a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 10px 20px;
+    border-radius: 20px; /* Rounded corners for a pill-shaped effect */
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+#navbar a:hover {
+    color: #000000;
+    background: rgba(255, 255, 255, 0.2);
+}
+
+/* Navbar Style on Scroll */
+.scrolled {
+    background: linear-gradient(90deg, #6a11cb, #2575fc);
+}
+
+/* Section Styles */
+section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #333;
+    background-size: cover;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Enhanced shadow */
+    border-radius: 10px;
+}
+
+#home { background-color: #f0f8ff; }
+#about { background-color: #f7e9d7; }
+#services { background-color: #f0f4c3; }
+#contact { background-color: #ffe0b2; }
+
+h1, h2 {
+    color: #444;
+    margin-bottom: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 2.5rem;
+    font-size: 0.9rem;
+    border-top: 3px solid #444;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #ffeb3b;
+}
+
+/* Logo Styles */
+.section-logo {
+    display: block;
+    margin: 0 auto 20px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.section-logo:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
+}
